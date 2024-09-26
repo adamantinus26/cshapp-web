@@ -169,24 +169,24 @@ export function getCommands(options) {
         });
     }
 
-    if (appHost.supports('filedownload')) {
-//download option commented out for CSH policy. Users desired to have download capability without button.
-        //// CanDownload should probably be updated to return true for these items?
-        //if (user.Policy.EnableContentDownloading && (item.Type === 'Season' || item.Type == 'Series')) {
-        //    commands.push({
-        //        name: globalize.translate('DownloadAll'),
-        //        id: 'downloadall',
-        //        icon: 'file_download'
-        //    });
-        }
-
-        // Books are promoted to major download Button and therefor excluded in the context menu
-        if (item.CanDownload && item.Type !== 'Book') {
-            commands.push({
-                name: globalize.translate('Download'),
-                id: 'download',
-                icon: 'file_download'
-            });
+//download option commented out for CSH policy. Users desired to have download capability without button.    
+//    if (appHost.supports('filedownload')) {
+//        // CanDownload should probably be updated to return true for these items?
+//        if (user.Policy.EnableContentDownloading && (item.Type === 'Season' || item.Type == 'Series')) {
+//            commands.push({
+//                name: globalize.translate('DownloadAll'),
+//                id: 'downloadall',
+//                icon: 'file_download'
+//            });
+//        }
+//
+//        // Books are promoted to major download Button and therefor excluded in the context menu
+//        if (item.CanDownload && item.Type !== 'Book') {
+//            commands.push({
+//                name: globalize.translate('Download'),
+//                id: 'download',
+//                icon: 'file_download'
+//            });
 
             commands.push({
                 name: globalize.translate('CopyStreamURL'),
