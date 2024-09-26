@@ -22,7 +22,7 @@ function processForgotPasswordResult(result) {
         let msg = globalize.translate('MessageForgotPasswordFileCreated');
         msg += '<br/>';
         msg += '<br/>';
-        msg += 'Enter PIN here to finish Password Reset<br/>';
+        msg += 'Check your email for a password reset link. If the link is broken, then you may take the PIN from that email and enter it here to reset your password.<br/>';
         msg += '<br/>';
         msg += result.PinFile;
         msg += '<br/>';
